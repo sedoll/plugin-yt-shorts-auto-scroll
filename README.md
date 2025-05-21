@@ -1,0 +1,1 @@
+# plugin-yt-shorts-auto-scroll
