@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Shorts Auto Scroll",
+    "version": "1.1",
+    "description": "Automatically scrolls to next Shorts video when current ends. Includes ON/OFF toggle.",
+    "permissions": ["scripting", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "icons/icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/shorts/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "128": "icons/icon.png"
+    }
+  }
+  
